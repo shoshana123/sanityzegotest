@@ -2,7 +2,7 @@
   "name": "sanityzegotest",
   "private": true,
   "version": "1.0.0",
-  "description": "This is a Next.js project powering the main https://www.zego.com website",
+  "description": "This is a test Next.js project powering the main https://www.zego.com website",
   "main": "package.json",
   "author": "Shoshana Rosenfield <shoshana.rosenfield@zego.com>",
   "license": "UNLICENSED",
