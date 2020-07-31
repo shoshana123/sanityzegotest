@@ -18,6 +18,7 @@ import workProvidersSectionColumnTwo from './workProvidersSectionColumnTwo';
 import createSchema from 'part:@sanity/base/schema-creator';
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type';
+import bannerSection from './bannerSection';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -32,6 +33,11 @@ export default createSchema({
       title: 'Product Template',
       type: 'document',
       fields: [
+        {
+          name: 'bannerSection',
+          type: 'reference',
+          to: [{ type: 'bannerSection' }],
+        },
         {
           name: 'heroSection',
           type: 'reference',
@@ -84,6 +90,7 @@ export default createSchema({
         },
       ],
     },
+    bannerSection,
     heroSection,
     policyBenefitsSection,
     comparisonTableSection,
