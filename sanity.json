@@ -32,6 +32,10 @@
     { 
       "implements": "part:@sanity/base/document-actions/resolver", 
       "path": "resolveDocumentActions.js" 
-    } 
+    }, 
+    {
+      "implements": "part:@sanity/base/brand-logo",
+      "path": "./logo/ZegoLogo.js"
+    }
   ]
 }
